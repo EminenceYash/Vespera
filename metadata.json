@@ -1,0 +1,6 @@
+{
+  "name": "Vespera — Sentiment & Text Intelligence",
+  "description": "Editorial sentiment and text intelligence workspace with clause-level polarity analysis, batch file import, local history, and CSV export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
