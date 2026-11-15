@@ -1,6 +1,7 @@
 import { memo, useState, type KeyboardEvent } from 'react';
 import { Eye, PenLine, RotateCcw, ArrowUpRight, Loader2 } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
+import creamHeaderImg from '../assets/images/vespera_cream_header_1794740568414.jpg';
 import type { AnalysisResult, SentencePolarity, SentimentLabel } from '../types/sentiment';
 
 interface ComposerPanelProps {
@@ -85,7 +86,7 @@ export const ComposerPanel = memo(function ComposerPanel({
             initial={{ opacity: 0.7, scale: 1.02 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
-            src="/src/assets/images/vespera_cream_header_1794740568414.jpg"
+            src={creamHeaderImg}
             alt="Warm cream stationery paper with delicate orchid watercolor and forest ink botanical linework"
             referrerPolicy="no-referrer"
             decoding="async"

@@ -76,7 +76,14 @@ npm run dev
 
 The Express + Vite development server starts on `http://localhost:3000`.
 
-### 4. Type Check & Production Build
+### 4. Deploying to Vercel
+
+Vercel deployments are supported out of the box via serverless functions in `api/` (`api/analyze.ts`, `api/health.ts`) and `vercel.json`:
+1. Push the repository to GitHub/GitLab/Bitbucket and import it into Vercel (Framework Preset: **Vite**).
+2. Add `GEMINI_API_KEY` in **Project Settings → Environment Variables** (no `VITE_` prefix).
+3. Deploy — Vercel serves `dist/` and routes `/api/analyze` and `/api/health` to the serverless functions automatically.
+
+### 5. Type Check & Production Build
 
 ```bash
 npm run lint

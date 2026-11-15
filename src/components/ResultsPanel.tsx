@@ -1,6 +1,7 @@
 import { memo, useEffect, useState } from 'react';
 import { CheckCircle2, AlertTriangle, MinusCircle, Split, SlidersHorizontal, Cpu } from 'lucide-react';
 import { animate, AnimatePresence, motion, useMotionValue, useTransform } from 'motion/react';
+import orchidEmblemImg from '../assets/images/vespera_orchid_emblem_1794740566983.jpg';
 import type { AnalysisEngineUsed, AnalysisResult, PresetSample, SentimentLabel } from '../types/sentiment';
 
 interface ResultsPanelProps {
@@ -175,7 +176,7 @@ export const ResultsPanel = memo(function ResultsPanel({
                 initial={{ opacity: 0.7, scale: 1.02 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.42, ease: EDITORIAL_EASE }}
-                src="/src/assets/images/vespera_orchid_emblem_1794740566983.jpg"
+                src={orchidEmblemImg}
                 alt="Botanical orchid illustration with deep forest leaves and antique gold linework on warm cream paper"
                 referrerPolicy="no-referrer"
                 decoding="async"
